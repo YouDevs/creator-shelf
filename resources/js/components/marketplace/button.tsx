@@ -14,7 +14,7 @@ const buttonVariants = cva('', {
             compact:
                 'border-[2px] border-on-background bg-primary font-label-mono text-on-primary transition-colors hover:bg-on-primary-fixed-variant',
             inverse:
-                'border-[2px] border-on-background bg-on-background font-label-mono text-surface transition-colors hover:bg-surface hover:text-on-background',
+                'border-[2px] border-on-background bg-on-background font-label-mono text-label-mono text-surface transition-colors hover:bg-surface hover:text-on-background',
         },
     },
     defaultVariants: {

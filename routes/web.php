@@ -8,6 +8,8 @@ Route::inertia('/', 'welcome')->name('home');
 
 Route::inertia('/preview', 'marketplace-preview')->name('marketplace.preview');
 
+Route::inertia('/react-home', 'home')->name('marketplace.home');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
 });
