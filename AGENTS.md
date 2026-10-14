@@ -1,3 +1,31 @@
+# Project Instructions
+
+## Project Context
+
+Before planning or implementing features:
+
+- Read `docs/spec.md` for product scope, business rules, and exclusions.
+- Read `docs/technical.md` for architecture, technical constraints,
+  and pending decisions.
+- Read the relevant sections of `docs/features.md` for user flows
+  and expected interface behavior, including related features
+  affected by the change.
+
+## Working with Project Documentation
+
+- Keep implementations within the documented scope and constraints.
+- Use `features.md` to expand on the specification, not to override
+  business rules or introduce undocumented scope.
+- Do not treat pending technical decisions as approved.
+- If a task requires resolving a pending decision, propose an approach
+  before implementing the affected functionality.
+- If you find conflicts or ambiguities across these documents,
+  these instructions, or the existing code, flag them for resolution
+  before implementing the affected behavior.
+- When we agree on changes to scope, behavior, architecture, or
+  constraints, update the affected documentation consistently.
+
+
 <laravel-boost-guidelines>
 === foundation rules ===
 
