@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Spinner } from '@/components/ui/spinner';
 import { register } from '@/routes';
+import { redirect as googleRedirect } from '@/routes/google';
 import { store } from '@/routes/login';
 import { request } from '@/routes/password';
 
@@ -91,6 +92,12 @@ export default function Login({ status, canResetPassword }: Props) {
                                 Log in
                             </Button>
                         </div>
+
+                        <Button asChild variant="outline" className="w-full">
+                            <a href={googleRedirect.url()}>
+                                Continue with Google
+                            </a>
+                        </Button>
 
                         <div className="text-muted-foreground text-center text-sm">
                             Don't have an account?{' '}
