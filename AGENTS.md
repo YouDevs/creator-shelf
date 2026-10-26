@@ -1,5 +1,10 @@
 # Project Instructions
 
+Before planning or implementing a feature, read its document in
+`docs/features/` when available. If it is missing, prepare it first
+and wait for review before implementing. Keep it consistent with
+the main project documents and respect any explicitly deferred work.
+
 ## Project Context
 
 Before planning or implementing features:
@@ -24,7 +29,6 @@ Before planning or implementing features:
   before implementing the affected behavior.
 - When we agree on changes to scope, behavior, architecture, or
   constraints, update the affected documentation consistently.
-
 
 <laravel-boost-guidelines>
 === foundation rules ===
