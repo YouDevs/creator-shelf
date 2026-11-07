@@ -58,6 +58,10 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 ## Verification Scripts
 
 - Do not create verification scripts or tinker when tests cover that functionality and prove they work. Unit and feature tests are more important.
+- After implementing each feature, bug fix, or code update, run `composer ci:check`.
+- If any validation fails, fix the issues related to the change and run `composer ci:check` again until it passes.
+- For automatically fixable issues, use the available commands such as `npm run lint`, `npm run format`, and `composer lint`.
+- If a failure cannot be resolved, report exactly which validation failed and why.
 
 ## Application Structure & Architecture
 
