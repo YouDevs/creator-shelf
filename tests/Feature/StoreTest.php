@@ -99,7 +99,11 @@ it('renders the dashboard with the authenticated users store', function () {
     $response->assertInertia(fn (Assert $page) => $page
         ->component('dashboard')
         ->where('store.id', $store->id)
-        ->where('store.subdomain', $store->subdomain),
+        ->where('store.title', $store->title)
+        ->where('store.description', $store->description)
+        ->where('store.subdomain', $store->subdomain)
+        ->where('store.profileImageUrl', null)
+        ->where('store.publicUrl', route('stores.public', $store->subdomain)),
     );
 });
 
