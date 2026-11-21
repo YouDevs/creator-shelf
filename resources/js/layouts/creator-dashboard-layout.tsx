@@ -82,9 +82,13 @@ function CreatorDashboardLayout({ children }: { children: ReactNode }) {
                                 {content}
                             </Link>
                         ) : (
-                            <a key={item.label} href="#" className={className}>
+                            <span
+                                key={item.label}
+                                aria-disabled="true"
+                                className={className}
+                            >
                                 {content}
-                            </a>
+                            </span>
                         );
                     })}
                 </nav>

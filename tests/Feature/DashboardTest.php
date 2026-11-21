@@ -17,3 +17,14 @@ test('authenticated users can visit the dashboard', function () {
         ->component('dashboard'),
     );
 });
+
+test('authenticated users without a store receive the store setup state', function () {
+    $user = User::factory()->create();
+
+    $response = $this->actingAs($user)->get(route('dashboard'));
+
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('dashboard')
+        ->where('store', null),
+    );
+});
